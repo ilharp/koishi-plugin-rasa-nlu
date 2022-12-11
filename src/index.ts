@@ -2,8 +2,6 @@ import { Context, Schema, Service } from 'koishi'
 
 export const name = 'rasa-nlu'
 
-export const using = ['http'] as const
-
 export interface Config {
   basic: {
     endpoint: string
