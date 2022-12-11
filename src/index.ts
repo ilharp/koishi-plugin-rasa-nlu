@@ -56,7 +56,7 @@ export function apply(ctx: Context, config: Config) {
 
   if (config.command.enabled) {
     ctx
-      .command('nlu <text>', '识别文本意图', { authority: 2 })
+      .command('nlu <text:text>', '识别文本意图', { authority: 2 })
       .action(async (_, text) => {
         const nluData = await ctx.rasanlu.parse(text)
 
